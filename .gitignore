@@ -8,3 +8,11 @@ ant.properties
 src/edu/cmu/cs/speech/tts/flite/R.java
 *~
 src/edu/cmu/cs/speech/tts/flite/*.class
+
+# LiveCode extension
+extension/*.lcm
+extension/code/
+extension/*.lcdoc
+extension/*.lce
+extension/*.lci
+extension/*.xml

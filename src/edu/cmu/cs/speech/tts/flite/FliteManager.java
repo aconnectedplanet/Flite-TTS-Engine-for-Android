@@ -33,7 +33,7 @@ public class FliteManager extends Activity implements OnItemClickListener {
         gridview.setAdapter(new ImageAdapter(this));
         gridview.setOnItemClickListener(this);
 
-        Voice.setDataStorageBasePath(getApplicationContext().getExternalFilesDir(null).getAbsolutePath());
+        Voice.setDataStorageBasePath(getApplicationContext().getFilesDir().getAbsolutePath());
  
         // Hack to disable GridView scrolling																									
         gridview.setOnTouchListener(new GridView.OnTouchListener() {

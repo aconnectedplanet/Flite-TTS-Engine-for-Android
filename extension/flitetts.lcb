@@ -1,0 +1,17 @@
+/*
+Flite TTS Service Library
+
+Description:
+This library wraps a Flite TTS Service and has no public LiveCode API.
+
+*/
+library edu.cmu.cs.speech.tts.flite
+
+metadata version is "0.0.1"
+metadata author is "Monte Goulding"
+metadata title is "Flite TTS Service"
+metadata os is "android"
+
+metadata android.permissions is "WRITE_EXTERNAL_STORAGE,READ_EXTERNAL_STORAGE"
+
+end library
