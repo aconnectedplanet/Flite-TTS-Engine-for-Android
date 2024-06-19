@@ -72,6 +72,16 @@ LOCAL_SRC_FILES := $(FLITE_LIB_DIR)/libflite_cmu_indic_lang.a
 include $(PREBUILT_STATIC_LIBRARY)
 
 include $(CLEAR_VARS)
+LOCAL_MODULE := libflite-cmu-grapheme-lex
+LOCAL_SRC_FILES := $(FLITE_LIB_DIR)/libflite_cmu_grapheme_lex.a
+include $(PREBUILT_STATIC_LIBRARY)
+
+include $(CLEAR_VARS)
+LOCAL_MODULE := libflite-cmu-grapheme-lang
+LOCAL_SRC_FILES := $(FLITE_LIB_DIR)/libflite_cmu_grapheme_lang.a
+include $(PREBUILT_STATIC_LIBRARY)
+
+include $(CLEAR_VARS)
 LOCAL_MODULE := libflite-cmulex
 LOCAL_SRC_FILES := $(FLITE_LIB_DIR)/libflite_cmulex.a
 include $(PREBUILT_STATIC_LIBRARY)
@@ -106,7 +116,9 @@ LOCAL_STATIC_LIBRARIES := \
 	libflite-usenglish \
 	libflite-cmulex \
 	libflite-cmu-indic-lang \
-	libflite-cmu-indic-lex
+	libflite-cmu-indic-lex \
+	libflite-cmu-grapheme-lang \
+	libflite-cmu-grapheme-lex
 
 LOCAL_LDLIBS:= -llog
 

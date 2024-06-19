@@ -69,6 +69,9 @@ extern "C" cst_lexicon *cmulex_init(void);
 extern "C" void cmu_indic_lang_init(cst_voice *v);
 extern "C" cst_lexicon *cmu_indic_lex_init(void);
 
+extern "C" void cmu_grapheme_lang_init(cst_voice *v);
+extern "C" cst_lexicon *cmu_grapheme_lex_init(void);
+
 void setVoiceList() {
     if(loadedVoices != NULL)
       {
@@ -78,6 +81,7 @@ void setVoiceList() {
     LOGI("Starting setVoiceList");
     flite_add_lang("eng",usenglish_init,cmulex_init);
     flite_add_lang("cmu_indic_lang",cmu_indic_lang_init,cmu_indic_lex_init);
+    flite_add_lang("cmu_grapheme_lang",cmu_grapheme_lang_init,cmu_grapheme_lex_init);
     loadedVoices = new FliteEngine::Voices(0, FliteEngine::ONLY_ONE_VOICE_REGISTERED); // Max number of voices is the first argument.
     if(loadedVoices == NULL)
       {
